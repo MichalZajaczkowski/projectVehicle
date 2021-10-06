@@ -29,13 +29,13 @@ public class App {
         Car myCar4 = new Car("myCar4");
         myCar4.engine = engine2;
 
-        System.out.println(myCar3.name);
-        System.out.println(myCar3.engine.power);
-        System.out.println(myCar3.engine.capacity);
+        myCar3.printName();
+        myCar3.engine.printPower();
+        myCar3.engine.printCapacity();
 
-        System.out.println(myCar4.name);
-        System.out.println(myCar4.engine.power);
-        System.out.println(myCar4.engine.capacity);
+        myCar4.printName();
+        myCar4.engine.printPower();
+        myCar4.engine.printCapacity();
 
     }
 }
