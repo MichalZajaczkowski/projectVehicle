@@ -8,8 +8,8 @@ public class App {
         myCar.printName();
 
         Car myCar2 = new Car();
-        myCar2.printName();
         myCar2.name = "myCar2";
+        myCar2.printName();
 
     }
 }
