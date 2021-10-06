@@ -17,10 +17,11 @@ public class App {
         engine2.power = 200;
         engine2.capacity = 2000;
 
-        System.out.println(engine1.power);
-        System.out.println(engine1.capacity);
-        System.out.println(engine2.power);
-        System.out.println(engine2.capacity);
+        engine1.printPower();
+        engine1.printCapacity();
+        engine2.printPower();
+        engine2.printCapacity();
+
 
         System.out.println("________");
 
