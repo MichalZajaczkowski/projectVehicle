@@ -37,6 +37,9 @@ public class App {
         myCar4.printName();
         myCar4.engine.printPower();
         myCar4.engine.printCapacity();
+        /////////////////////
+        System.out.println("________");
+        Car.staticMethod();
 
     }
 }

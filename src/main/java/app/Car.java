@@ -15,4 +15,8 @@ public class Car {
     public void printName() {
         System.out.println(name);
     }
+
+    public static void staticMethod() {
+        System.out.println("To jest metoda statyczna");
+    }
 }
