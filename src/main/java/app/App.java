@@ -39,7 +39,9 @@ public class App {
         myCar4.engine.printCapacity();
         /////////////////////
         System.out.println("________");
-        Car.staticMethod();
+        StaticExample.staticMethod();
+        StaticExample staticExample = new StaticExample();
+        staticExample.nonStaticMethod();
 
     }
 }
