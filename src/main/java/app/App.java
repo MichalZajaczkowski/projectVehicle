@@ -1,5 +1,8 @@
 package app;
 
+import app.vehicle.Car;
+import app.vehicle.Engine;
+
 public class App {
     public static void main(String[] args) {
 
@@ -10,12 +13,12 @@ public class App {
         myCar2.printName();
 
         Engine engine1 = new Engine();
-        engine1.power = 100;
-        engine1.capacity = 1000;
+        engine1.setPower(100);
+        engine1.setCapacity(1000);
 
         Engine engine2 = new Engine();
-        engine2.power = 200;
-        engine2.capacity = 2000;
+        engine2.setPower(200);
+        engine2.setCapacity(2000);
 
         engine1.printPower();
         engine1.printCapacity();
@@ -26,17 +29,17 @@ public class App {
         System.out.println("________");
 
         Car myCar3 = new Car("myCar3");
-        myCar3.engine = engine1;
+        myCar3.setEngine(engine1);
         Car myCar4 = new Car("myCar4");
-        myCar4.engine = engine2;
+        myCar4.setEngine(engine2);
 
         myCar3.printName();
-        myCar3.engine.printPower();
-        myCar3.engine.printCapacity();
+        myCar3.getEngine().printPower();
+        myCar3.getEngine().printCapacity();
 
         myCar4.printName();
-        myCar4.engine.printPower();
-        myCar4.engine.printCapacity();
+        myCar4.getEngine().printPower();
+        myCar4.getEngine().printCapacity();
         /////////////////////
         System.out.println("________");
         StaticExample.staticMethod();
