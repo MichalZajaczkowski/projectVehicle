@@ -1,50 +1,15 @@
 package app;
 
-import app.vehicle.Car;
-import app.vehicle.Engine;
-
 public class App {
     public static void main(String[] args) {
 
-        Car myCar = new Car("myCar");
-        myCar.printName();
+        System.out.println("___Calculator_____");
 
-        Car myCar2 = new Car("myCar2");
-        myCar2.printName();
-
-        Engine engine1 = new Engine();
-        engine1.setPower(100);
-        engine1.setCapacity(1000);
-
-        Engine engine2 = new Engine();
-        engine2.setPower(200);
-        engine2.setCapacity(2000);
-
-        engine1.printPower();
-        engine1.printCapacity();
-        engine2.printPower();
-        engine2.printCapacity();
-
-
-        System.out.println("________");
-
-        Car myCar3 = new Car("myCar3");
-        myCar3.setEngine(engine1);
-        Car myCar4 = new Car("myCar4");
-        myCar4.setEngine(engine2);
-
-        myCar3.printName();
-        myCar3.getEngine().printPower();
-        myCar3.getEngine().printCapacity();
-
-        myCar4.printName();
-        myCar4.getEngine().printPower();
-        myCar4.getEngine().printCapacity();
-        /////////////////////
-        System.out.println("________");
-        StaticExample.staticMethod();
-        StaticExample staticExample = new StaticExample();
-        staticExample.nonStaticMethod();
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.divide(6, 3));
+        System.out.println(calculator.divide(5, 45));
+        System.out.println(calculator.divide(1, 23));
+        System.out.println(calculator.divide(13, 3));
 
     }
 }
