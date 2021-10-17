@@ -6,6 +6,17 @@ import app.vehicle.Car;
 public class App {
     public static void main(String[] args) {
 
+        Integer number = 12;
+
+        switch (number % 2) {
+            case 0:
+                System.out.println("liczba parzysta");
+                break;
+            case 1:
+                System.out.println("liczba nieparzysta");
+                break;
+        }
+
         Car car1 = new Car("car1", 200);
         Car car2 = new Car("car2", 200);
 
@@ -36,4 +47,5 @@ public class App {
             System.out.println("Prędkości są równe");
         }
     }
+
 }
