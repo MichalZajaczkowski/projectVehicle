@@ -10,11 +10,17 @@ public class App {
 
         switch (number % 2) {
             case 0:
-                System.out.println("liczba parzysta");
+                System.out.println("liczba parzysta switch");
                 break;
             case 1:
-                System.out.println("liczba nieparzysta");
+                System.out.println("liczba nieparzysta switch");
                 break;
+        }
+
+        if (number % 2 == 0) {
+            System.out.println("liczba parzysta if");
+        } else {
+            System.out.println("liczba nieparzysta if");
         }
 
         Car car1 = new Car("car1", 200);
